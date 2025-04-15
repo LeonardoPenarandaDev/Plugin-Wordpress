@@ -1,0 +1,90 @@
+/* Estilos generales */
+.wrap h1 {
+    margin-bottom: 20px;
+}
+
+.tables-form,
+.files-form {
+    margin-bottom: 30px;
+}
+
+.tables-form label,
+.files-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.tables-form input[type="text"],
+.tables-form textarea,
+.files-form input[type="text"],
+.files-form textarea,
+.files-form input[type="url"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tables-form button,
+.files-form button {
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tables-form button:hover,
+.files-form button:hover {
+    background-color: #005177;
+}
+
+/* Estilos para tablas */
+.widefat.fixed.striped {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.widefat.fixed.striped th,
+.widefat.fixed.striped td {
+    padding: 10px;
+    text-align: left;
+}
+
+.widefat.fixed.striped tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el shortcode */
+.tables-codermaster-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tables-codermaster-table th,
+.tables-codermaster-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tables-codermaster-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.tables-codermaster-table .button {
+    padding: 5px 10px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.tables-codermaster-table .button:hover {
+    background-color: #005177;
+}
