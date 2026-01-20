@@ -1,0 +1,75 @@
+<!-- Mockup visual del plugin Tables Codermaster para WordPress -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockup Tables Codermaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #f7f7f7; font-family: Arial, sans-serif; padding: 40px; }
+        .wrap { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; max-width: 900px; margin: auto; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Gestión de Tablas</h1>
+        <form class="tables-form">
+            <label for="nombre_tabla">Nombre de la Tabla:</label>
+            <input type="text" name="nombre_tabla" required>
+            <button type="submit">Agregar Tabla</button>
+        </form>
+        <h2>Tablas Existentes</h2>
+        <table class="tables-codermaster-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre de la Tabla</th>
+                    <th>Shortcode</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>abc123</td>
+                    <td>Documentos Legales</td>
+                    <td>[tables_codermaster id="abc123"]</td>
+                    <td><a href="#" class="button">Gestionar Archivos</a></td>
+                </tr>
+                <tr>
+                    <td>def456</td>
+                    <td>Informes Técnicos</td>
+                    <td>[tables_codermaster id="def456"]</td>
+                    <td><a href="#" class="button">Gestionar Archivos</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2>Vista del Shortcode</h2>
+        <h2>Documentos Legales</h2>
+        <table class="tables-codermaster-table">
+            <thead>
+                <tr>
+                    <th>Nombre del Archivo</th>
+                    <th>Descripción</th>
+                    <th>Fecha de Publicación</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>contrato.pdf</td>
+                    <td>Contrato de servicios 2026</td>
+                    <td>2026-01-10</td>
+                    <td><a class="button" href="#" download>Descargar</a></td>
+                </tr>
+                <tr>
+                    <td>reglamento.docx</td>
+                    <td>Reglamento interno actualizado</td>
+                    <td>2026-01-15</td>
+                    <td><a class="button" href="#" download>Descargar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
