@@ -3,62 +3,45 @@
     margin-bottom: 20px;
 }
 
-.tables-form,
-.files-form {
-    margin-bottom: 30px;
-}
-
-.tables-form label,
-.files-form label {
+.wrap label {
     display: block;
     margin-bottom: 5px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-.tables-form input[type="text"],
-.tables-form textarea,
-.files-form input[type="text"],
-.files-form textarea,
-.files-form input[type="url"] {
+.wrap input[type="text"],
+.wrap input[type="url"],
+.wrap input[type="date"],
+.wrap textarea,
+.wrap select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.tables-form button,
-.files-form button {
+.wrap select {
+    max-width: 400px;
+}
+
+.wrap > form > button[type="submit"] {
     padding: 10px 20px;
     background-color: #0073aa;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
-.tables-form button:hover,
-.files-form button:hover {
+.wrap > form > button[type="submit"]:hover {
     background-color: #005177;
 }
 
 /* Estilos para tablas */
-.widefat.fixed.striped {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-}
-
-.widefat.fixed.striped th,
-.widefat.fixed.striped td {
-    padding: 10px;
-    text-align: left;
-}
-
-.widefat.fixed.striped tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/* Estilos para el shortcode */
 .tables-codermaster-table {
     width: 100%;
     border-collapse: collapse;
@@ -70,6 +53,7 @@
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
+    vertical-align: middle;
 }
 
 .tables-codermaster-table th {
@@ -77,14 +61,87 @@
     font-weight: bold;
 }
 
+.tables-codermaster-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botones */
 .tables-codermaster-table .button {
     padding: 5px 10px;
     background-color: #0073aa;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
+    display: inline-block;
+    margin: 2px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .tables-codermaster-table .button:hover {
     background-color: #005177;
+    color: #fff;
+}
+
+/* Botón Editar */
+.tables-codermaster-table .tc-btn-edit {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.tables-codermaster-table .tc-btn-edit:hover {
+    background-color: #d68910;
+    color: #fff;
+}
+
+/* Botón Eliminar */
+.tables-codermaster-table .tc-btn-delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.tables-codermaster-table .tc-btn-delete:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+/* Botones de orden (flechas) */
+.tc-orden-cell {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tables-codermaster-table .tc-btn-order {
+    padding: 2px 8px;
+    background-color: #7f8c8d;
+    color: #fff;
+    font-size: 11px;
+    min-width: 28px;
+    text-align: center;
+}
+
+.tables-codermaster-table .tc-btn-order:hover {
+    background-color: #5a6c6e;
+    color: #fff;
+}
+
+/* Formulario inline de edición */
+.tables-codermaster-table td form {
+    margin: 0;
+}
+
+.tables-codermaster-table td form input[type="text"],
+.tables-codermaster-table td form input[type="url"],
+.tables-codermaster-table td form input[type="date"] {
+    padding: 5px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Notices */
+.notice.is-dismissible {
+    margin-top: 15px;
 }
