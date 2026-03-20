@@ -1,51 +1,61 @@
-/* Estilos generales */
-.wrap h1 {
-    margin-bottom: 20px;
+/* =============================================
+   ADMIN - Botones personalizados
+   ============================================= */
+
+/* Botón Editar */
+.tc-btn-edit {
+    background-color: #f39c12 !important;
+    color: #fff !important;
+    border-color: #e08e0b !important;
 }
 
-.wrap label {
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    font-weight: bold;
+.tc-btn-edit:hover {
+    background-color: #d68910 !important;
+    color: #fff !important;
 }
 
-.wrap input[type="text"],
-.wrap input[type="url"],
-.wrap input[type="date"],
-.wrap textarea,
-.wrap select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/* Botón Eliminar */
+.tc-btn-delete {
+    background-color: #e74c3c !important;
+    color: #fff !important;
+    border-color: #c0392b !important;
 }
 
-.wrap select {
-    max-width: 400px;
+.tc-btn-delete:hover {
+    background-color: #c0392b !important;
+    color: #fff !important;
 }
 
-.wrap > form > button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #0073aa;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 5px;
+/* Botones de orden (flechas arriba/abajo) */
+.tc-orden-cell {
+    text-align: center;
+    white-space: nowrap;
 }
 
-.wrap > form > button[type="submit"]:hover {
-    background-color: #005177;
+.tc-btn-order {
+    padding: 2px 8px !important;
+    background-color: #7f8c8d !important;
+    color: #fff !important;
+    border-color: #6c7a7d !important;
+    font-size: 11px !important;
+    min-width: 28px;
+    text-align: center;
 }
 
-/* Estilos para tablas */
+.tc-btn-order:hover {
+    background-color: #5a6c6e !important;
+    color: #fff !important;
+}
+
+/* =============================================
+   FRONTEND - Shortcode table
+   ============================================= */
+
 .tables-codermaster-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tables-codermaster-table th,
@@ -65,83 +75,16 @@
     background-color: #f9f9f9;
 }
 
-/* Botones */
 .tables-codermaster-table .button {
-    padding: 5px 10px;
+    padding: 8px 30px;
     background-color: #0073aa;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
-    margin: 2px 0;
-    border: none;
-    cursor: pointer;
-    font-size: 13px;
-    line-height: 1.5;
 }
 
 .tables-codermaster-table .button:hover {
     background-color: #005177;
     color: #fff;
-}
-
-/* Botón Editar */
-.tables-codermaster-table .tc-btn-edit {
-    background-color: #f39c12;
-    color: #fff;
-}
-
-.tables-codermaster-table .tc-btn-edit:hover {
-    background-color: #d68910;
-    color: #fff;
-}
-
-/* Botón Eliminar */
-.tables-codermaster-table .tc-btn-delete {
-    background-color: #e74c3c;
-    color: #fff;
-}
-
-.tables-codermaster-table .tc-btn-delete:hover {
-    background-color: #c0392b;
-    color: #fff;
-}
-
-/* Botones de orden (flechas) */
-.tc-orden-cell {
-    text-align: center;
-    white-space: nowrap;
-}
-
-.tables-codermaster-table .tc-btn-order {
-    padding: 2px 8px;
-    background-color: #7f8c8d;
-    color: #fff;
-    font-size: 11px;
-    min-width: 28px;
-    text-align: center;
-}
-
-.tables-codermaster-table .tc-btn-order:hover {
-    background-color: #5a6c6e;
-    color: #fff;
-}
-
-/* Formulario inline de edición */
-.tables-codermaster-table td form {
-    margin: 0;
-}
-
-.tables-codermaster-table td form input[type="text"],
-.tables-codermaster-table td form input[type="url"],
-.tables-codermaster-table td form input[type="date"] {
-    padding: 5px;
-    margin: 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Notices */
-.notice.is-dismissible {
-    margin-top: 15px;
 }
